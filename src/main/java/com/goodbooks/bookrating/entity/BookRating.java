@@ -16,8 +16,7 @@ public class BookRating {
     @Column(name="rating")
     private String rating;
 
-    public BookRating(Integer serialNumber, String userId, String bookId, String rating) {
-        this.serialNumber = serialNumber;
+    public BookRating(String userId, String bookId, String rating) {
         this.userId = userId;
         this.bookId = bookId;
         this.rating = rating;
@@ -49,11 +48,4 @@ public class BookRating {
         this.rating = rating;
     }
 
-    public Integer getSerialNumber() {
-        return serialNumber;
-    }
-
-    public void setSerialNumber(Integer serialNumber) {
-        this.serialNumber = serialNumber;
-    }
 }
